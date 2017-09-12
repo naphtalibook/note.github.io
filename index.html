@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MY TASK BOARD</title>
+    <meta charset="UTF-8">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <img src="imgs/Pinboard.png">
+    <img src="imgs/Pinboard4.png">
+    
+    <div>
+    <h1>MY TASK BOARD</h1>
+    </div>
+    <div id="createNote">
+        <h2>New Note</h2>
+        <textarea id="mainTextArea" placeholder="note text..."></textarea>
+        <input type="time" value="00:00" id="inputTime">
+        <input type="date" id="inputDate">
+        <button id="addNote" onclick="addNote()">Add Note <span class="glyphicon glyphicon-pushpin"></span></button>
+
+        <p id="validation" class="validation"></p><!--validation text in this P-->
+    </div>
+
+    <div id="noteList" class="noteList container">
+        <!--sticky notes will go in here-->
+    </div>
+
+    <script src="bootstrap/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"> </script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
